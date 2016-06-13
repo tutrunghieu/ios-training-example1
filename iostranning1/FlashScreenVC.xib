@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlashScreenVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-8Z-b4t">
+                    <rect key="frame" x="121" y="269" width="79" height="30"/>
+                    <state key="normal" title="First button"/>
+                    <connections>
+                        <action selector="button1_Click:" destination="-1" eventType="touchUpInside" id="Fgq-8w-M9v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-6S-wTh">
+                    <rect key="frame" x="110" y="306" width="101" height="30"/>
+                    <state key="normal" title="Second button"/>
+                    <connections>
+                        <action selector="button2_Click:" destination="-1" eventType="touchUpInside" id="zLx-Kc-fFe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.87295955380000001" blue="0.5516369955" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="O8F-8Z-b4t" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3IL-D6-M9L"/>
+                <constraint firstItem="8Da-6S-wTh" firstAttribute="top" secondItem="O8F-8Z-b4t" secondAttribute="bottom" constant="7" id="IdT-qO-xf4"/>
+                <constraint firstItem="8Da-6S-wTh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tp2-uN-h1D"/>
+                <constraint firstItem="O8F-8Z-b4t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WDO-ph-n7J"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
